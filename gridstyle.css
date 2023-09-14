@@ -1,0 +1,26 @@
+.item {
+    border: 1px solid black;
+    padding: 8px 16px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 16px;
+    grid-template-rows: repeat(12, 150px);
+    grid-row-gap: 16px;
+    
+}
+.item8 {
+    grid-row-start: 1
+}
+
+.item9 {
+    grid-row-end: span 2;
+    
+}
+
+.item5 {
+    grid-column-end: span 2;
+}
+
