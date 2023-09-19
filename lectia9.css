@@ -1,0 +1,58 @@
+@media (min-width: 1024px) {
+  .titlu {
+    font-size: 3rem;
+    line-height: 50px;
+    font-weight: 700;
+  }
+}
+@media (min-width: 780px) and (max-width: 1023) {
+  .titlu {
+    font-size: 2rem;
+    line-height: 36px;
+    font-weight: 500;
+  }
+}
+@media (max-width: 779px) {
+  .titlu {
+    font-size: 1rem;
+    line-height: 16px;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: 1024px) {
+  .par {
+    font-size: 1.5rem;
+    line-height: 30px;
+    font-weight: 700;
+  }
+}
+@media (min-width: 780px) and (max-width: 1023) {
+  .par {
+    font-size: 1.2rem;
+    line-height: 20px;
+    font-weight: 500;
+  }
+}
+@media (max-width: 779px) {
+  .par {
+    font-size: 1rem;
+    line-height: 16px;
+    font-weight: 400;
+  }
+}
+
+.class1 {
+  line-height: 50px;
+  font-weight: 700;
+  color: chartreuse;
+  border: 1px solid black;
+}
+
+.class2 {
+  width: 150px;
+  height: 150px;
+  color: red;
+  border: 1px solid green;
+  border: 1px solid gray;
+}/*# sourceMappingURL=lectia9.css.map */

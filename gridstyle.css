@@ -12,15 +12,20 @@
     
 }
 .item8 {
-    grid-row-start: 1
+    grid-column: 1;
+    grid-row: 1 
 }
 
-.item9 {
+.item1 {
+    grid-column: 2;
+    grid-row: 4 
+}
+.item5 {
     grid-row-end: span 2;
     
 }
 
-.item5 {
+.item9 {
     grid-column-end: span 2;
 }
 

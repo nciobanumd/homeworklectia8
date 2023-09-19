@@ -1,0 +1,106 @@
+@mixin largeTitle {
+    font-size: 3rem;
+    line-height: 50px;
+    font-weight: 700;
+}
+
+@mixin mediumTitle {
+    font-size: 2rem;
+    line-height: 36px;
+    font-weight: 500;
+}
+
+@mixin smallTitle {
+    font-size: 1rem;
+    line-height: 16px;
+    font-weight: 400;
+}
+
+@mixin largePg {
+    font-size: 1.5rem;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+@mixin mediumPg {
+    font-size: 1.2rem;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+@mixin smallPg {
+    font-size: 1rem;
+    line-height: 16px;
+    font-weight: 400;
+}
+
+@mixin desktop {
+    @media (min-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: 780px) and (max-width: 1023) {
+        @content;
+    }
+}
+
+@mixin phone {
+    @media (max-width: 779px) {
+        @content;
+    }
+}
+
+.titlu {
+    @include desktop {
+        @include largeTitle;
+    }
+    @include tablet {
+        @include mediumTitle;
+    }
+    @include phone {
+        @include smallTitle;
+    }
+}
+
+.par {
+    @include desktop {
+        @include largePg;
+    }
+    @include tablet {
+        @include mediumPg;
+    }
+    @include phone {
+        @include smallPg;
+    }
+
+}
+
+@mixin divunu {
+    line-height: 50px;
+    font-weight: 700;
+    color: chartreuse;
+    border: 1px solid black;
+}
+
+.class1 {
+    @include divunu;
+    
+
+}
+
+@mixin divdoi ($w: 150px, $h: 150px, $color: red) {
+    width: $w;
+    height: $h;
+    color: $color;
+    border: 1px solid green;
+
+
+}
+
+.class2 {
+    @include divdoi();
+    border: 1px solid gray;
+
+}
